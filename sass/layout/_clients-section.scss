@@ -1,0 +1,48 @@
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.clients-list {
+  display: inline-flex;
+  column-gap: 30px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      border-color: var(--brand-color);
+    }
+  }
+
+  &__icon {
+    fill: var(--gray-svg);
+    transition: fill var(--transition-dur-and-func);
+
+    .clients-list__item:hover &,
+    .clients-list__item:focus & {
+      fill: var(--brand-color);
+    }
+  }
+}
+
+.clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+
+
+

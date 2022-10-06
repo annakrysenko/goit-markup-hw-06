@@ -1,0 +1,102 @@
+
+.header {
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  border: 1px solid rgba(236, 236, 236, 1);
+  position: relative;
+  
+    &-container {
+      display: flex;
+      column-gap: 50px;
+      align-items: center;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 50px;
+    }
+
+    &-logo {
+      margin-right: 42px;
+    }
+
+    &-mail {
+      margin-left: auto;
+    }
+
+    &-mail,
+    &-tel {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    &-link {
+      color: var(--dark);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+        border-color var(--transition-dur-and-func);
+    }
+
+    &-mail,
+    &-tel {
+      color: var(--gray);
+    }
+
+    &-nav {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.71;
+    }
+
+    &-icon {
+      fill: gray;
+      transition: fill var(--transition-dur-and-func);
+    }
+
+    &-mail:hover &-icon,
+    &-tel:hover &-icon,
+    &-mail:focus &-icon,
+    &-tel:focus &-icon {
+      fill: var(--brand-color);
+    }
+
+    &-list-item {
+      display: flex;
+      justify-content: center;
+      overflow: visible;
+      position: relative;
+    }
+
+    &-logo span {
+      color: var(--brand-color);
+    }
+}
+
+
+.current {
+  color: var(--brand-color);
+  
+    &::after {
+      content: '';
+
+      position: absolute;
+
+      display: flex;
+      background-color: var(--brand-color);
+      border-radius: 2px;
+      height: 4px;
+      width: 100%;
+
+      margin-top: 28px;
+    }
+}
+
+
+
