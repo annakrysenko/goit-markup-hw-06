@@ -631,13 +631,14 @@ body {
   margin-top: 12px;
 }
 
-.footer-socil-title {
+.footer-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: white;
 }
 
 .footer-social-list {
