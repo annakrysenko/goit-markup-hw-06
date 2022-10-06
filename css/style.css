@@ -696,14 +696,14 @@ body {
   background-color: rgba(47, 48, 58, 1);
   color: #fff;
   
+   padding-left: 15px;
+  
 }    
 .footer-form-input:hover {
       cursor: pointer;
     }
 
-.footer-form-input::placeholder {
-  padding: 15px;
-}
+
 
 .footer-form-btn {
   background: #2196F3;
